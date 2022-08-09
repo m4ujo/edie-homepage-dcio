@@ -20,3 +20,11 @@ navElements.forEach((e) => {
     document.querySelector('body').style.overflowY = menuOpen ? 'hidden' : 'auto'
   })
 })
+
+window.onresize = () => {
+  if (window.innerWidth > 768) {
+    menuButton.classList.remove('open')
+    menuOpen = false
+    document.querySelector('body').style.overflowY = 'auto'
+  }
+}
