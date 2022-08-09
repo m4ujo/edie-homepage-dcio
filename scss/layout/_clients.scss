@@ -1,0 +1,32 @@
+@use "../base/mixins";
+@use "../base/variables" as v;
+
+.clients {
+  padding-bottom: 100px;
+
+  &__text {
+    @include mixins.set-font(500, 24px, 36px);
+    margin-bottom: 20px;
+  }
+}
+
+.client {
+  @include mixins.set-flex(row, inherit, inherit, 1.8em);
+  
+  &__image {
+    width: 82px;
+    border-radius: 12px;
+  }
+  
+  &__info {
+    @include mixins.set-flex(column, space-around, inherit, 0px);
+  }
+  
+  &__name {
+    @include mixins.set-font(500, 24px, 36px);
+  }
+  &__job {
+    @include mixins.set-font(500, 18px, 27px);
+    color: v.$c-gray;
+  }
+}
