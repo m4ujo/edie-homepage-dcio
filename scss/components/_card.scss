@@ -1,0 +1,48 @@
+@use '../base/variables' as v;
+@use '../base/mixins';
+
+.card {
+  padding: 45px 34px;
+  border-radius: 24px;
+
+  &:hover {
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  }
+
+  &__icon {
+    border-radius: 16px;
+    display: inline-flex;
+    padding: 20px;
+    text-align: center;
+
+    &--blue {
+      background-color: v.$c-blue;
+    }
+    &--green {
+      background-color: v.$c-green;
+    }
+    &--red {
+      background-color: v.$c-red;
+    }
+
+    & > .material-icons {
+      width: 27px;
+      height: 27px;
+      align-self: center;
+      color: v.$c-white;
+    }
+  }
+
+  &__text {
+    &:nth-child(2) {
+      @include mixins.set-font(700, 24px, 36px);
+
+      padding-top: 35px;
+    }
+    &:nth-child(3) {
+      @include mixins.set-font(400, 16px, 24px);
+
+      padding: 28px 0;
+    }
+  }
+}
