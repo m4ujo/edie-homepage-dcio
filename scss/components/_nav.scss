@@ -35,3 +35,22 @@
 .menu-button.open ~ .nav .nav__content {
   display: flex;
 }
+
+@media (min-width: 768px) {
+  .nav {
+    position: static;
+    width: inherit;
+    height: inherit;
+    visibility: inherit;
+    background-color: inherit;
+    justify-content: end;
+  
+    &__content {
+      @include mixins.set-flex(row, end, center, 2em);
+    }
+  
+    &__link {
+      color: v.$c-black;
+    }
+  }
+}

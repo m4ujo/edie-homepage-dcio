@@ -1,15 +1,15 @@
-@use '../base/variables' as v;
-@use '../base/mixins';
+@use "../base/variables" as v;
+@use "../base/mixins";
 
 .contact-form {
   @include mixins.set-flex(column, inherit, inherit, 0);
-  
+
   &__text {
     @include mixins.set-font(500, 10px, 15px);
 
     color: v.$c-gray;
   }
-  
+
   &__main {
     @include mixins.set-flex(row, space-between, inherit, 1em);
 
@@ -20,5 +20,19 @@
   
   &__input {
     padding: 10px 20px;
+  }
+}
+
+@media (max-width: 365px) {
+  .contact-form {
+    gap: 1em;
+    &__main {
+      @include mixins.set-flex(column, inherit, inherit, 10px);
+      background-color: inherit;
+    }
+    &__input {
+      background-color: v.$c-white-2;
+      border-radius: 12px;
+    }
   }
 }
