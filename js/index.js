@@ -15,10 +15,8 @@ menuButton.addEventListener('click', () => {
 
 navElements.forEach((e) => {
   e.addEventListener('click', () => {
-    if (menuOpen) {
-      menuButton.classList.remove('open')
-      menuOpen = false
-    } else
-      menuOpen = true
+    menuButton.classList.remove('open')
+    menuOpen = !menuOpen
+    document.querySelector('body').style.overflowY = menuOpen ? 'hidden' : 'auto'
   })
 })
