@@ -1,0 +1,24 @@
+@use '../base/variables' as v;
+@use '../base/mixins';
+
+.contact-form {
+  @include mixins.set-flex(column, inherit, inherit, 0);
+  
+  &__text {
+    @include mixins.set-font(500, 10px, 15px);
+
+    color: v.$c-gray;
+  }
+  
+  &__main {
+    @include mixins.set-flex(row, space-between, inherit, 1em);
+
+    background-color: v.$c-white-2;
+    border-radius: 12px;
+    padding: 4px;
+  }
+  
+  &__input {
+    padding: 10px 20px;
+  }
+}
