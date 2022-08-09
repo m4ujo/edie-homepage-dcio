@@ -1,0 +1,23 @@
+@use "../base/mixins";
+
+.services {
+  padding: 50px 0px;
+
+  &__text {
+    @include mixins.set-font(500, 24px, 36px);
+
+    padding: 0 39px;
+  }
+
+  &__content {
+    @include mixins.set-flex(column, inherit, inherit, 20px);
+
+    padding: 70px 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services__content {
+    flex-direction: row;
+  }
+}
