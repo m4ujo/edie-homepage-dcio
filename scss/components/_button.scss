@@ -1,0 +1,16 @@
+@use '../base/variables' as v;
+@use '../base/mixins';
+
+.button-simple {
+  @include mixins.set-font(500, 14px, 21px);
+
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: v.$c-white-2;
+  background-color: v.$c-blue;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .9;
+  }
+}
