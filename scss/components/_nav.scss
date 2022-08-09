@@ -1,0 +1,37 @@
+@use "../base/mixins";
+@use "../base/variables" as v;
+
+.nav {
+  @include mixins.set-flex(row, center, center, 0);
+  @include mixins.set-transition(0.1s, ease-in-out);
+  transition-property: width;
+  background-color: v.$c-black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  
+  &__content {
+    @include mixins.set-flex(column, center, center, 2em);
+    transition-property: display;
+    @include mixins.set-transition(0.6s, ease-in);
+    
+    display: none;
+    text-align: center;
+  }
+  
+  &__link {
+    @include mixins.set-font(400, 14px, 36px);
+    
+    text-decoration: none;
+    color: v.$c-white;
+  }
+}
+
+.menu-button.open ~ .nav {
+  width: 100%;
+}
+.menu-button.open ~ .nav .nav__content {
+  display: flex;
+}

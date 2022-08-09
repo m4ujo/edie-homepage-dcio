@@ -1,0 +1,60 @@
+@use "../base/mixins";
+@use "../base/variables" as v;
+
+.header {
+  @include mixins.set-flex(row-reverse, space-between, center, 0);
+  background-color: v.$c-white;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  height: 4em;
+}
+
+.logo-link {
+  position: relative;
+  z-index: 1;
+
+  &__text {
+    @include mixins.set-font(800, 24px, 35px);
+    font-family: v.$ff-secondary;
+  }
+
+  transition-property: color;
+  @include mixins.set-transition(0.3s, ease-in-out);
+}
+
+.menu-button {
+  @include mixins.set-flex(column, center, center, 3px);
+  position: relative;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  z-index: 2;
+  
+  &__line {
+    background-color: v.$c-black;
+    width: 18px;
+    height: 3px;
+    border-radius: 10px;
+    transition-property: transform, opacity;
+    @include mixins.set-transition(0.2s, ease-in-out);
+  }
+  
+  &.open {
+    .menu-button__line:nth-child(1) {
+      background-color: v.$c-white;
+      transform: rotate(45deg) translateY(8.5px);
+    }
+    .menu-button__line:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-button__line:nth-child(3) {
+      background-color: v.$c-white;
+      transform: rotate(-45deg) translateY(-8.5px);
+    }
+  }
+}
+
+.menu-button.open ~ .logo-link {
+  color: v.$c-white;
+}
