@@ -1,3 +1,11 @@
-.container {
+@use "./variables" as v;
+
+* {
+  font-family: v.$ff-primary;
+}
+.header, .main {
   padding: 0 10px;
+}
+.main {
+  padding-top: 4em;
 }
