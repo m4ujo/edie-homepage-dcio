@@ -1,189 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/devchallenges.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Edie</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <script defer src="./js/index.js"></script>
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <div class="menu-button">
-        <div class="menu-button__line"></div>
-        <div class="menu-button__line"></div>
-        <div class="menu-button__line"></div>
-      </div>
-      <a href="/" class="logo-link">
-        <p class="logo-link__text">Edie</p>
-      </a>
-      <nav class="nav">
-        <div class="nav__content">
-          <a class="nav__link" href="#home">Home</a>
-          <a class="nav__link" href="#services">Services</a>
-          <a class="nav__link" href="#our-works">Our Works</a>
-          <a class="nav__link" href="#our-team">Our Team</a>
-          <a class="nav__link" href="#clients">Clients</a>
-          <a class="nav__link" href="#contact">Contact</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img/devchallenges.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Heebo:100,200,300,regular,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Edie</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="menu-button">
+          <div class="menu-button__line"></div>
+          <div class="menu-button__line"></div>
+          <div class="menu-button__line"></div>
         </div>
-      </nav>
-    </header>
-    <main class="main">
-      <section id="home" class="home">
-        <p class="home__text">Unhappy with your website</p>
-        <p class="home__text">We create beautiful and fast web services</p>
-        <div class="home__thumbnail">
-          <img src="img/heroImage.png" alt="" class="home__image">
-        </div>
-        <p class="home__text">Story, emotion and purpose</p>
-        <p class="home__text">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
-        <form class="contact-form">
-          <header class="contact-form__header">
-            <p class="contact-form__text">Want us to contact you?</p>
-          </header>
-          <main class="contact-form__main">
-            <input type="email" class="contact-form__input" placeholder="Email">
-            <button type="button" class="contact-form__button button-simple">Join</button>
-          </main>
-        </form>
-      </section>
-      <section class="services" id="services">
-        <p class="services__text">We offer high demand services</p>
-        <div class="services__content">
-          <section class="card">
-            <div class="card__icon card__icon--blue">
-              <span class="material-icons">
-                edit
-              </span>
-            </div>
-            <p class="card__text">UI/UX Design</p>
-            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-            <button type="button" class="card__button button-simple">Get started</button>
-          </section>
-          <section class="card">
-            <div class="card__icon card__icon--green">
-              <span class="material-icons">
-                code
-              </span>
-            </div>
-            <p class="card__text">Front End</p>
-            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-            <button type="button" class="card__button button-simple">Get started</button>
-          </section>
-          <section class="card">
-            <div class="card__icon card__icon--red">
-              <span class="material-icons">
-                storage
-              </span>
-            </div>
-            <p class="card__text">Back End</p>
-            <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-            <button type="button" class="card__button button-simple">Get started</button>
-          </section>
-        </div>
-      </section>
-      <section class="our-works" id="our-works">
-        <p class="our-works__text">Good design means good business</p>
-        <div class="our-works__content">
-          <section class="work">
-            <div class="work__thumbnail">
-              <img src="./img/smarthome.jpg" alt="Smart home dashboard" class="work__image">
-            </div>
-            <p class="work__text">Full stack application</p>
-            <p class="work__text">Smart home dashboard</p>
-          </section>
-          <section class="work">
-            <div class="work__thumbnail">
-              <img src="./img/onboard.jpg" alt="Onboard application" class="work__image">
-            </div>
-            <p class="work__text">UX/UI design</p>
-            <p class="work__text">Onboard application</p>
-          </section>
-          <section class="work">
-            <div class="work__thumbnail">
-              <img src="./img/booking.png" alt="Booking system" class="work__image">
-            </div>
-            <p class="work__text">Mobile application</p>
-            <p class="work__text">Booking system</p>
-          </section>
-          <section class="work">
-            <div class="work__thumbnail">
-              <img src="./img/juice-product.png" alt="Juice product homepage" class="work__image">
-            </div>
-            <p class="work__text">Front End application</p>
-            <p class="work__text">Juice product homepage</p>
-          </section>
-        </div>
-        <p class="our-works__text">see more
-          <span class="material-icons our-works__icon">
-            trending_flat
-          </span>
-        </p>
-      </section>
-      <section class="our-team" id="our-team">
-        <div class="our-team__text-content">
-          <p class="our-team__text">Meet the team</p>
-          <p class="our-team__text">We are chilled and a laidback team</p>
-          <p class="our-team__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <div class="our-team__grid">
-          <img src="./img/person3.png" alt="person3" class="our-team__image">
-          <img src="./img/person1.png" alt="person1" class="our-team__image">
-          <img src="./img/person2.png" alt="person2" class="our-team__image">
-        </div>
-      </section>
-      <section class="clients" id="clients">
-        <p class="clients__text">“Fast and outstanding resutls. Edie understands their customer's needs. They have a young and talented team.”</p>
-        <div class="client">
-          <img src="./img/person4.png" alt="" class="client__image">
-          <div class="client__info">
-            <p class="client__name">Carlos Tran</p>
-            <p class="client__job">The Decorate Gatsby</p>
+        <a href="/" class="logo-link">
+          <p class="logo-link__text">Edie</p>
+        </a>
+        <nav class="nav">
+          <div class="nav__content">
+            <a class="nav__link" href="#home">Home</a>
+            <a class="nav__link" href="#services">Services</a>
+            <a class="nav__link" href="#our-works">Our Works</a>
+            <a class="nav__link" href="#our-team">Our Team</a>
+            <a class="nav__link" href="#clients">Clients</a>
+            <a class="nav__link" href="#contact">Contact</a>
           </div>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="contact__content">
-          <ul class="contact__links">
-            <li><a class="nav__link" href="#home">Home</a></li>
-            <li><a class="nav__link" href="#services">Services</a></li>
-            <li><a class="nav__link" href="#our-works">Our Works</a></li>
-            <li><a class="nav__link" href="#our-team">Our Team</a></li>
-            <li><a class="nav__link" href="#clients">Clients</a></li>
-            <li><a class="nav__link" href="#contact">Contact</a></li>
-          </ul>
-          <div class="contact__social-section">
-            <a href="/" class="logo-link">
-              <p class="logo-link__text">Edie</p>
-            </a>
-            <div class="contact__social">
-              <a href="#instagram"><img class="contact__icon" src="./img/instagram.svg" alt="instagram icon Edie"></a>
-              <a href="#linkedin"><img class="contact__icon" src="./img/linkedin.svg" alt="linkedin icon Edie"></a>
-              <a href="#twitter"><img class="contact__icon" src="./img/twitter.svg" alt="twitter icon Edie"></a>
-            </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section id="home" class="home">
+          <p class="home__text">Unhappy with your website</p>
+          <p class="home__text">We create beautiful and fast web services</p>
+          <div class="home__thumbnail">
+            <img src="img/heroImage.png" alt="" class="home__image" />
           </div>
+          <p class="home__text">Story, emotion and purpose</p>
+          <p class="home__text">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
           <form class="contact-form">
             <header class="contact-form__header">
               <p class="contact-form__text">Want us to contact you?</p>
             </header>
             <main class="contact-form__main">
-              <input type="email" class="contact-form__input" placeholder="Email">
-              <button type="button" class="contact-form__button button-simple">Join</button>
+              <input
+                type="email"
+                class="contact-form__input"
+                placeholder="Email"
+              />
+              <button type="button" class="contact-form__button button-simple">
+                Join
+              </button>
             </main>
           </form>
-        </div>
-        <footer class="footer">
-          <p class="footer__text">Created by <a href="https://github.com/maujoooo" target="_blank">maujoooo</a> -
-            devChallenges.io</p>
-        </footer>
-      </section>
-    </main>
-  </div>
-</body>
+        </section>
+        <section class="services" id="services">
+          <p class="services__text">We offer high demand services</p>
+          <div class="services__content">
+            <section class="card">
+              <div class="card__icon card__icon--blue">
+                <span class="material-icons"> edit </span>
+              </div>
+              <p class="card__text">UI/UX Design</p>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button type="button" class="card__button button-simple">
+                Get started
+              </button>
+            </section>
+            <section class="card">
+              <div class="card__icon card__icon--green">
+                <span class="material-icons"> code </span>
+              </div>
+              <p class="card__text">Front End</p>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button type="button" class="card__button button-simple">
+                Get started
+              </button>
+            </section>
+            <section class="card">
+              <div class="card__icon card__icon--red">
+                <span class="material-icons"> storage </span>
+              </div>
+              <p class="card__text">Back End</p>
+              <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button type="button" class="card__button button-simple">
+                Get started
+              </button>
+            </section>
+          </div>
+        </section>
+        <section class="our-works" id="our-works">
+          <p class="our-works__text">Good design means good business</p>
+          <div class="our-works__content">
+            <section class="work">
+              <div class="work__thumbnail">
+                <img
+                  src="./img/smarthome.jpg"
+                  alt="Smart home dashboard"
+                  class="work__image"
+                />
+              </div>
+              <p class="work__text">Full stack application</p>
+              <p class="work__text">Smart home dashboard</p>
+            </section>
+            <section class="work">
+              <div class="work__thumbnail">
+                <img
+                  src="./img/onboard.jpg"
+                  alt="Onboard application"
+                  class="work__image"
+                />
+              </div>
+              <p class="work__text">UX/UI design</p>
+              <p class="work__text">Onboard application</p>
+            </section>
+            <section class="work">
+              <div class="work__thumbnail">
+                <img
+                  src="./img/booking.png"
+                  alt="Booking system"
+                  class="work__image"
+                />
+              </div>
+              <p class="work__text">Mobile application</p>
+              <p class="work__text">Booking system</p>
+            </section>
+            <section class="work">
+              <div class="work__thumbnail">
+                <img
+                  src="./img/juice-product.png"
+                  alt="Juice product homepage"
+                  class="work__image"
+                />
+              </div>
+              <p class="work__text">Front End application</p>
+              <p class="work__text">Juice product homepage</p>
+            </section>
+          </div>
+          <p class="our-works__text">
+            see more
+            <span class="material-icons our-works__icon"> trending_flat </span>
+          </p>
+        </section>
+        <section class="our-team" id="our-team">
+          <div class="our-team__text-content">
+            <p class="our-team__text">Meet the team</p>
+            <p class="our-team__text">We are chilled and a laidback team</p>
+            <p class="our-team__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="our-team__grid">
+            <img
+              src="./img/person3.png"
+              alt="person3"
+              class="our-team__image"
+            />
+            <img
+              src="./img/person1.png"
+              alt="person1"
+              class="our-team__image"
+            />
+            <img
+              src="./img/person2.png"
+              alt="person2"
+              class="our-team__image"
+            />
+          </div>
+        </section>
+        <section class="clients" id="clients">
+          <p class="clients__text">
+            “Fast and outstanding resutls. Edie understands their customer's
+            needs. They have a young and talented team.”
+          </p>
+          <div class="client">
+            <img src="./img/person4.png" alt="" class="client__image" />
+            <div class="client__info">
+              <p class="client__name">Carlos Tran</p>
+              <p class="client__job">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </section>
+        <section class="contact" id="contact">
+          <div class="contact__content">
+            <ul class="contact__links">
+              <li><a class="nav__link" href="#home">Home</a></li>
+              <li><a class="nav__link" href="#services">Services</a></li>
+              <li><a class="nav__link" href="#our-works">Our Works</a></li>
+              <li><a class="nav__link" href="#our-team">Our Team</a></li>
+              <li><a class="nav__link" href="#clients">Clients</a></li>
+              <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="contact__social-section">
+              <a href="/" class="logo-link">
+                <p class="logo-link__text">Edie</p>
+              </a>
+              <div class="contact__social">
+                <a href="#instagram"
+                  ><img
+                    class="contact__icon"
+                    src="./img/instagram.svg"
+                    alt="instagram icon Edie"
+                /></a>
+                <a href="#linkedin"
+                  ><img
+                    class="contact__icon"
+                    src="./img/linkedin.svg"
+                    alt="linkedin icon Edie"
+                /></a>
+                <a href="#twitter"
+                  ><img
+                    class="contact__icon"
+                    src="./img/twitter.svg"
+                    alt="twitter icon Edie"
+                /></a>
+              </div>
+            </div>
+            <form class="contact-form">
+              <header class="contact-form__header">
+                <p class="contact-form__text">Want us to contact you?</p>
+              </header>
+              <main class="contact-form__main">
+                <input
+                  type="email"
+                  class="contact-form__input"
+                  placeholder="Email"
+                />
+                <button
+                  type="button"
+                  class="contact-form__button button-simple"
+                >
+                  Join
+                </button>
+              </main>
+            </form>
+          </div>
+          <footer class="footer">
+            <p class="footer__text">
+              Created by
+              <a href="https://github.com/maujoooo" target="_blank">maujoooo</a>
+              - devChallenges.io
+            </p>
+          </footer>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
