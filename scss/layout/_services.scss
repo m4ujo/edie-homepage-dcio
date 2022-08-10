@@ -1,7 +1,7 @@
 @use "../base/mixins";
 
 .services {
-  padding: 50px 0px;
+  padding: 50px 10px;
 
   &__text {
     @include mixins.set-font(500, 24px, 36px);

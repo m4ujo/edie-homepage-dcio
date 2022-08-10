@@ -2,6 +2,9 @@
 @use "../base/variables" as v;
 
 .our-works {
+
+  padding: 0 10px;
+
   &__text:nth-child(1) {
     @include mixins.set-font(500, 24px, 36px);
   }
