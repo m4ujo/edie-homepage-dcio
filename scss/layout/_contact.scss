@@ -1,0 +1,52 @@
+@use "../base/mixins";
+@use "../base/variables" as v;
+
+.contact {
+  background-color: v.$c-black-2;
+  padding: 24px 41px;
+
+  &__links {
+    & .nav__link {
+      color: v.$c-white;
+      display: inline;
+    }
+  }
+
+  &__content {
+    padding: 12px 0;
+    @include mixins.set-flex(column, inherit, inherit, 64px);
+  }
+
+  &__social-section {
+    @include mixins.set-flex(column, inherit, inherit, 16px);
+
+    & .logo-link {
+      display: inline;
+      &__text {
+        display: inline;
+        color: v.$c-white;
+        font-size: 36px;
+      }
+    }
+  }
+
+  &__social {
+    @include mixins.set-flex(row, inherit, center, 11px);
+
+    & a:nth-child(3) {
+      margin-bottom: -2.5px;
+    }
+  }
+}
+
+.footer {
+  padding-top: 142px;
+  width: 100%;
+
+  &__text {
+    @include mixins.set-font(500, 14px, 17px);
+    color: v.$c-white-2;
+    font-family: v.$ff-special;
+    text-align: center;
+  }
+}
