@@ -1,20 +1,23 @@
 @use "../base/mixins";
 @use "../base/variables" as v;
 
-.work {
+.work {  
   &__thumbnail {
     border-radius: 12px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &:nth-child(1) &__thumbnail {
-    background-color: #f39a9a;
+    background-color: v.$c-red;
     & .work__image {
       transform: rotate(-15deg);
     }
   }
   &:nth-child(2) &__thumbnail {
-    background-color: #a7d5b9;
+    background-color: v.$c-green;
     & .work__image {
       transform: rotate(-30deg);
     }
@@ -33,5 +36,21 @@
   }
   &__text:nth-child(3) {
     @include mixins.set-font(500, 18px, 27px);
+  }
+}
+
+@media (min-width: 768px) {
+  .work {
+    &__image {
+      width: 100%;
+      height: 300px;
+    }
+
+    &:nth-child(1) {
+      margin-top: 100px;
+    }
+    &:nth-child(3) {
+      margin-top: 100px;
+    }
   }
 }

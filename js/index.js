@@ -16,7 +16,7 @@ menuButton.addEventListener('click', () => {
 navElements.forEach((e) => {
   e.addEventListener('click', () => {
     menuButton.classList.remove('open')
-    menuOpen = !menuOpen
+    menuOpen = false
     document.querySelector('body').style.overflowY = menuOpen ? 'hidden' : 'auto'
   })
 })

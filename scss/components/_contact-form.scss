@@ -2,7 +2,7 @@
 @use "../base/mixins";
 
 .contact-form {
-  @include mixins.set-flex(column, inherit, inherit, 0);
+  @include mixins.set-flex(column, inherit, inherit, 5px);
 
   &__text {
     @include mixins.set-font(500, 10px, 15px);
@@ -12,20 +12,20 @@
 
   &__main {
     @include mixins.set-flex(row, space-between, inherit, 1em);
-
+    width: 100%;
     background-color: v.$c-white-2;
     border-radius: 12px;
     padding: 4px;
   }
   
   &__input {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px 10px;
   }
 }
 
 @media (max-width: 365px) {
   .contact-form {
-    gap: 1em;
     &__main {
       @include mixins.set-flex(column, inherit, inherit, 10px);
       background-color: inherit;
@@ -33,6 +33,7 @@
     &__input {
       background-color: v.$c-white-2;
       border-radius: 12px;
+      padding: 10px 20px;
     }
   }
 }

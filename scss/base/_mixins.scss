@@ -20,3 +20,11 @@
     timing-function: $timing-function;
   };
 }
+
+@mixin mov-x($x) {
+  transform: translateX($x);
+}
+
+@mixin mov-y($y) {
+  transform: translateY($y);
+}

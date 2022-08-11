@@ -50,3 +50,20 @@
     text-align: center;
   }
 }
+
+@media (min-width: 768px) {
+  .contact {
+    &__content {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    &__social-section {
+      padding-top: 20px;
+      justify-content: start;
+    }
+    & .contact-form {
+      padding-top: 20px;
+      justify-content: start;
+    }
+  }
+}

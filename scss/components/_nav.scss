@@ -22,7 +22,7 @@
   }
   
   &__link {
-    @include mixins.set-font(400, 14px, 36px);
+    @include mixins.set-font(500, 14px, 36px);
     
     text-decoration: none;
     color: v.$c-white;

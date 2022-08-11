@@ -17,7 +17,17 @@
 }
 
 @media (min-width: 768px) {
-  .services__content {
-    flex-direction: row;
+  .services {
+    padding: 50px 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services {
+    padding: 50px 120px;
+
+    &__content {
+      flex-direction: row;
+    }
   }
 }
